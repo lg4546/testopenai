@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>您的名字 - 个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 添加 CryptoJS 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div id="ai-assistant">
+                <h2>AI助手</h2>
+                <div id="ai-chat-container">
+                    <div id="ai-chat-messages"></div>
+                    <div id="ai-chat-input-container">
+                        <textarea id="ai-chat-input" placeholder="输入您的问题..." rows="1"></textarea>
+                        <button id="ai-chat-send">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播结构保持不变 -->
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是您的详细介绍。例如：我是一名热爱技术的开发者，专注于创建美观实用的网站和应。</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>作品集</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="http://gips0.baidu.com/it/u=2298867753,3464105574&fm=3028&app=3028&f=JPEG&fmt=auto?w=960&h=1280" alt="项目1">
+                    <h3>项目1</h3>
+                    <p>项目1的简短描述</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="http://gips0.baidu.com/it/u=2298867753,3464105574&fm=3028&app=3028&f=JPEG&fmt=auto?w=960&h=1280" alt="项目2">
+                    <h3>项目2</h3>
+                    <p>项目2的简短描述</p>
+                </div>
+                <!-- 可以添加更多项目 -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="email" name="email" placeholder="您的邮箱" required>
+                <textarea name="message" placeholder="您的留言" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+
+        <section id="ai-assistant">
+            <h2>AI助手</h2>
+            <div id="ai-chat-container">
+                <div id="ai-chat-messages"></div>
+                <div id="ai-chat-input-container">
+                    <input type="text" id="ai-chat-input" placeholder="输入您的问题...">
+                    <button id="ai-chat-send">发送</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 您的名字. 保留所有权利。</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">GitHub</a>
+            <a href="#" class="social-icon">抖音</a>
+            <a href="#" class="social-icon">小红书</a>
+        </div>
+    </footer>
+
+    <!-- 在 body 标签结束前添加 script.js 引用 -->
+    <script src="script.js"></script>
+</body>
+</html>
